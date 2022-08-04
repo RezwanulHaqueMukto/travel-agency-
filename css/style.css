@@ -1,0 +1,202 @@
+/*!NOTE:###################global################## */
+/* !?##############+++++++++++++++################## */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Lato:wght@100;400;700;900&display=swap');
+
+/* html {
+   scroll-padding-top: var(--scroll-padding, 180px);
+} */
+
+:root {
+   --text: #333333;
+   --w_text: #e9e7e7;
+   --body_color: #e9e7e7;
+   --footerBackground: #cccccc;
+   --white: #ffffff;
+   --button_color: #333333;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+
+}
+
+body {
+   background-color: var(--body_color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+   font-family: 'Cardo',
+      serif;
+
+}
+
+p,
+a,
+text,
+ul li a {
+   font-family: 'Lato',
+      sans-serif;
+}
+
+
+ul li {
+   list-style: none;
+
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+a:hover {
+   cursor: pointer;
+}
+
+.text_font {
+   font-size: 16.16px;
+}
+
+.heading_style {
+   font-size: 81.48px;
+   font-weight: 700;
+}
+
+img {
+   max-width: 100%;
+   display: inline-block;
+}
+
+
+
+
+/*!NOTE:###################reuseable################## */
+/* !?##############+++++++++++++++################## */
+.button {
+   /* padding: 1.2rem 5rem; */
+   text-align: center;
+   display: inline-block;
+   border-radius: 5px;
+   background: var(--button_color);
+   color: var(--white);
+
+   font-weight: 900;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   font-family: 'Lato',
+      sans-serif;
+}
+
+button {
+   border: none;
+}
+
+.button a {
+   font-size: 12px;
+}
+
+
+.card {
+   background-color: #fff;
+   color: #333;
+   border-radius: 10px;
+   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+}
+
+
+
+
+/* ! placement items*/
+
+.flex {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   height: 100%;
+}
+
+.low-z {
+   z-index: -10;
+}
+
+.high-z {
+   z-index: 10;
+}
+
+.absolute {
+   position: absolute;
+}
+
+.sticky {
+   position: sticky;
+}
+
+.relative {
+   position: relative;
+}
+
+.fixed {
+   position: fixed;
+}
+
+
+
+/*?NOTE: typography  */
+/*! nav */
+nav ul li a {
+   -webkit-transition: .2s ease-in-out;
+   -o-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
+   color: var(--green);
+   font-size: 1rem;
+}
+
+
+/* !NOTE:===============================*/
+/** main navbar */
+/* ?NOTE:===============================  */
+
+
+.header .nav_left ul li a {
+   font-size: 20.83px;
+   font-weight: 400;
+
+
+}
+
+.header .nav_left ul li a.active {
+   font-weight: 900;
+}
+
+.header .nav_right .button {
+   background-color: transparent;
+   border: 2px solid var(--button_color);
+   color: var(--button_color);
+}
+
+.dumy_top {
+   background: red;
+   height: 200vh;
+}
