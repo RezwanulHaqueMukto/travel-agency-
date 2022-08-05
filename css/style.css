@@ -124,12 +124,13 @@ button {
 
 .heading_style {
    text-align: center;
-   font-size: 35px;
+   font-size: 25px;
    font-weight: 700;
    line-height: 1.1;
    color: var(--text);
 
 }
+
 /* ! placement items*/
 
 .flex {
@@ -215,14 +216,34 @@ nav ul li a {
    -ms-transition: all .5ms ease;
    -o-transition: all .5ms ease;
 }
-
+/* !NOTE:===============================*/
+/**+++++++++ main nav +++++++++++*/
+/* ?NOTE:===============================  */
+.header{
+   position: relative;
+   z-index: 100 !important;
+}
 /* !NOTE:===============================*/
 /**+++++++++ home section +++++++++++*/
 /* ?NOTE:===============================  */
+#home{
+   overflow: hidden;
+}
 .home_contents {
    padding: 50px 10px;
+
 }
 
-.home_contents .home_button .button{
+.home_contents .home_button .button {
    width: 80%;
+}
+
+.home_contents .home_left_shape {
+   display: none;
+
+}
+
+.home_contents .home_right_shape {
+   display: none;
+
 }

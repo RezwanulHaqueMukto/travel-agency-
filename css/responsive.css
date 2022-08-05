@@ -1,10 +1,39 @@
 @media only screen and (min-width: 576px) {
+
+   .heading_style {
+      font-size: 35px;
+   }
+
    .home_contents {
       padding: 30px 10px;
    }
+
+   .home_contents .home_left_shape {
+      display: inline-block;
+      left: -10%;
+      bottom: -50%;
+   }
+
+   .home_contents .home_right_shape {
+      display:inline-block;
+      bottom: -15%;
+      right:  -10%;
+
+   }
+
+   /* .home_contents .home_right_shape {
+      right: -8%;
+      bottom: 0%;
+
+   } */
 }
 
 @media only screen and (min-width: 768px) {
+   .heading_style {
+      font-size: 50px;
+
+   }
+
    .heading_style {
       text-align: left;
 
@@ -18,14 +47,53 @@
    .home_contents .home_button .button {
       width: auto;
    }
-   
+
+   .home_contents .home_left_text h2 {
+      padding-right: 1rem;
+   }
+  .home_contents .home_left_shape {
+     left: 0%;
+     top: -5%;
+
+  }
+
+ 
+  .home_contents .home_right_shape {
+     display: inline-block;
+     bottom: -15%;
+     right: -10%;
+
+  }
 }
 
 @media only screen and (min-width:992px) {
+   /*?NOTE: ?reuseable */
 
    .button {
       padding: 1rem 4.5rem;
    }
+
+   /*?NOTE: home */
+   .heading_style {
+      font-size: 55.44px;
+
+   }
+
+   .home_contents .home_left_text h2 {
+      padding-right: 9rem;
+   }
+
+   .home_contents .home_left_shape {
+      left: -10%;
+      top: 30%;
+
+   }
+    .home_contents .home_right_shape {
+       display: inline-block;
+       bottom: -10%;
+       right: -15%;
+
+    }
 }
 
 @media only screen and (min-width:1200px) {
@@ -36,7 +104,7 @@
    }
 
    /*?NOTE: typography */
-   .heading_style {
+   .home_contents .heading_style {
       font-size: 81.48px;
 
    }
@@ -57,6 +125,12 @@
    .home_contents .home_left_text p {
       padding-right: 3.2rem;
    }
+ .home_contents .home_right_shape {
+    display: inline-block;
+    bottom: -15%;
+    right: -8%;
+
+ }
 }
 
 @media screen and (min-width:1400px) {
@@ -93,15 +167,20 @@
    /*! NOTE:+++++++home section+++++++ */
 
 
-   .home_contents .home_left_text h2 {
+   /* .home_contents .home_left_text h2 {
       padding-right: 4rem;
-   }
+   } */
 
    .home_contents .home_left_text p {
       padding-right: 8rem;
    }
 
-
+   .home_contents .home_left_text h2 {
+      padding-right: 4rem;
+   }
+   .home_contents {
+      padding: 150px 10px;
+   }
 
 }
 
