@@ -67,14 +67,7 @@ a:hover {
    cursor: pointer;
 }
 
-.text_font {
-   font-size: 16.16px;
-}
 
-.heading_style {
-   font-size: 81.48px;
-   font-weight: 700;
-}
 
 img {
    max-width: 100%;
@@ -87,27 +80,28 @@ img {
 /*!NOTE:###################reuseable################## */
 /* !?##############+++++++++++++++################## */
 .button {
-   padding: .5rem 1rem;
+   padding: .8rem 1rem;
    text-align: center;
    display: inline-block;
    border-radius: 5px;
    background: var(--button_color);
+   font-size: 20.83px;
    color: var(--white);
-   font-weight: 900;
+   font-weight: 900 !important;
    border-radius: 5px;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
-   font-family: 'Lato',      sans-serif;
+   font-family: 'Lato', sans-serif;
 }
 
 button {
    border: none;
 }
 
-.button a {
-   font-size: 12px;
+.button {
+   font-size: 16px;
 }
 
 
@@ -122,7 +116,20 @@ button {
 
 
 
+.text_font {
+   font-size: 16.16px;
+   line-height: 1.3;
+   color: var(--text);
+}
 
+.heading_style {
+   text-align: center;
+   font-size: 35px;
+   font-weight: 700;
+   line-height: 1.1;
+   color: var(--text);
+
+}
 /* ! placement items*/
 
 .flex {
@@ -159,7 +166,10 @@ button {
    position: fixed;
 }
 
+/* #home {
 
+   background-color: red;
+} */
 
 /*?NOTE: typography  */
 /*! nav */
@@ -173,24 +183,25 @@ nav ul li a {
 
 
 /* !NOTE:===============================*/
-/** main navbar */
+/**+++++++++ main navbar +++++++++++*/
 /* ?NOTE:===============================  */
 
-.header{
+.header {
    transition: all .2s ease-in-out;
    -webkit-transition: all .2s ease-in-out;
    -moz-transition: all .2s ease-in-out;
    -ms-transition: all .2s ease-in-out;
    -o-transition: all .2s ease-in-out;
 }
-.header .nav_left  li a {
+
+.header .nav_left li a {
    font-size: 20.83px;
    font-weight: 400;
 
 
 }
 
-.header .nav_left  li a.active {
+.header .nav_left li a.active {
    font-weight: 900;
 }
 
@@ -205,7 +216,13 @@ nav ul li a {
    -o-transition: all .5ms ease;
 }
 
-.dumy_top {
-   background: red;
-   height: 200vh;
+/* !NOTE:===============================*/
+/**+++++++++ home section +++++++++++*/
+/* ?NOTE:===============================  */
+.home_contents {
+   padding: 50px 10px;
+}
+
+.home_contents .home_button .button{
+   width: 80%;
 }
