@@ -133,6 +133,13 @@ button {
 
 }
 
+.md_heading_style {
+   font-size: 22.36px;
+   font-weight: 700;
+   line-height: 1.1;
+   color: var(--text);
+}
+
 /* ! placement items*/
 
 .flex {
@@ -230,9 +237,10 @@ nav ul li a {
 /*?SECTION:===============================*/
 /**+++++++++ home section +++++++++++*/
 /* ?SECTION:===============================  */
-#home{
+#home {
    overflow: hidden;
 }
+
 .home_contents {
    padding: 50px 10px;
 
@@ -272,10 +280,25 @@ nav ul li a {
    border: 2px solid var(--white);
 }
 
-.guide_top  .button {
+.guide_top .button {
    width: 80%;
 }
+
 .guide_left_shape,
-.guide_right_shape{
-   display:none;
+.guide_right_shape {
+   display: none;
+}
+
+.guide_bottom{
+   text-align: center;
+}
+.guide_bottom .guide_card img {
+   margin-bottom: 25px;
+   /* width: 80%; */
+}
+
+.guide_bottom_left_shape,
+.guide_bottom_right_shape {
+   display: none;
+
 }
