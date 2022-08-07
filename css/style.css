@@ -339,7 +339,7 @@ nav ul li a {
 /* ?SECTION:===============================  */
 
 .flight_top {
-   height: 55vh;
+   height: 60vh;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -357,6 +357,7 @@ nav ul li a {
 
 
 .flight_top_links a {
+   font-weight: 700;
    color: var(--text);
    padding: 5px;
 }
