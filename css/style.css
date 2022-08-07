@@ -355,7 +355,9 @@ nav ul li a {
    color: var(--gray);
 }
 
-
+.flight_top ul{
+   padding-left: 0px !important;
+}
 .flight_top_links a {
    font-weight: 700;
    color: var(--text);
