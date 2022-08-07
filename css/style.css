@@ -14,7 +14,7 @@
    --white: #ffffff;
    --button_color: #333333;
    --guide_top_color: #333333;
-
+   --gray: rgba(128, 128, 128, 0.632);
 }
 
 * {
@@ -140,6 +140,32 @@ button {
    color: var(--text);
 }
 
+@keyframes float {
+   0% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+   }
+
+   50% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+   }
+
+   100% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+   }
+}
+
 /* ! placement items*/
 
 .flex {
@@ -217,6 +243,7 @@ nav ul li a {
 
 .header .nav_right .button {
    background-color: transparent;
+   padding: .5rem 1rem;
    border: 2px solid var(--button_color);
    color: var(--button_color);
    transition: all .5ms ease;
@@ -225,7 +252,10 @@ nav ul li a {
    -ms-transition: all .5ms ease;
    -o-transition: all .5ms ease;
 }
-
+.header .nav_right .button:hover{
+   background: var(--button_color);
+   color: var(--w_text);
+}
 /* !NOTE:===============================*/
 /**+++++++++ main nav +++++++++++*/
 /* ?NOTE:===============================  */
@@ -242,8 +272,8 @@ nav ul li a {
 }
 
 .home_contents {
-   padding: 50px 10px;
-
+   padding: 10px 10px;
+   text-align: center;
 }
 
 .home_contents .home_button .button {
@@ -289,9 +319,10 @@ nav ul li a {
    display: none;
 }
 
-.guide_bottom{
+.guide_bottom {
    text-align: center;
 }
+
 .guide_bottom .guide_card img {
    margin-bottom: 25px;
    /* width: 80%; */
@@ -299,6 +330,60 @@ nav ul li a {
 
 .guide_bottom_left_shape,
 .guide_bottom_right_shape {
+   display: none;
+
+}
+
+/* !?SECTION:===============================*/
+/**+++++++++ flight section +++++++++++*/
+/* ?SECTION:===============================  */
+
+.flight_top {
+   height: 55vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.flight_top_title {
+   color: var(--text);
+}
+
+.flight_top_title:hover,
+.flight_top_links a:hover {
+   color: var(--gray);
+}
+
+
+.flight_top_links a {
+   color: var(--text);
+   padding: 5px;
+}
+
+.flight_top_links a:hover {
+   text-decoration: underline;
+
+}
+
+.flight_top h2 {
+   font-size: 25px;
+   font-weight: 900;
+   padding: 10px 30px;
+}
+
+.flight_top h2 span {
+   text-decoration: underline;
+}
+
+.flight_icon {
+   margin-bottom: 50px;
+   animation: float 5s ease-in-out infinite;
+   -webkit-animation: float 5s ease-in-out infinite;
+}
+
+.flight_top .flight_top_right_shape,
+.flight_top .flight_top_bottom_shape {
    display: none;
 
 }

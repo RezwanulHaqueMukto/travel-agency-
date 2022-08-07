@@ -1,3 +1,11 @@
+@media only screen and (min-width:400px) {
+   .flight_top h2 {
+      font-size: 35px;
+
+   }
+
+}
+
 @media only screen and (min-width: 576px) {
 
    /*?NOTE: typography */
@@ -27,26 +35,25 @@
 
    }
 
-   /* .home_contents .home_right_shape {
-      right: -8%;
-      bottom: 0%;
 
-   } */
-   /*! guide section */
-   /* .guide_bottom .guide_card h3::before {
-      content: "";
-      position: absolute;
-      background-color: var(--text);
-      width: 50px;
-      height: 2px;
-      left: 1%;
-      bottom: 40%;
-   } */
+   /*!?SECTION guide section */
 
    .guide_bottom {
       padding: 50px 0px;
    }
 
+   /*!?SECTION flight section */
+
+   .flight_top h2 {
+      font-size: 45px;
+
+   }
+
+
+
+   .flight_top_links {
+      display: flex;
+   }
 }
 
 @media only screen and (min-width: 768px) {
@@ -66,7 +73,8 @@
 
    /*?SECTION: home */
    .home_contents {
-      padding: 50px 10px;
+      padding: 100px 10px;
+      text-align: left;
    }
 
    .home_contents .home_button .button {
@@ -130,6 +138,43 @@
       width: auto;
    }
 
+   /*!?SECTION flight section */
+   /* .flight_top {
+      height: 40vh;
+
+   } */
+
+   .flight_top h2 {
+      font-size: 55px;
+      padding: 10px 100px;
+   }
+
+   .flight_top_links a {
+      padding: 10px;
+      font-size: 20px;
+   }
+
+   .flight_top .flight_top_bottom_shape {
+      display: inline-block;
+      bottom: 5%;
+      left: -5%;
+   }
+
+   .flight_top_links a::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 25px;
+      background: var(--text);
+      top: 20%;
+      margin-left: 10px;
+
+   }
+
+
+   .flight_top_links li:last-child a::after {
+      display: none;
+   }
 }
 
 @media only screen and (min-width:992px) {
@@ -194,6 +239,18 @@
 
    }
 
+   /*!?SECTION flight section */
+
+
+   .flight_top h2 {
+      font-size: 75px;
+
+   }
+
+   .flight_top_links a {
+
+      font-size: 25px;
+   }
 }
 
 @media only screen and (min-width:1200px) {
@@ -215,7 +272,7 @@
 
    /*?SECTION: home */
    .home_contents {
-      padding: 100px 10px;
+      padding: 120px 10px;
    }
 
    .home_contents .home_left_text {
@@ -268,6 +325,25 @@
       bottom: .5%;
 
    }
+
+   /*!SECTION:flight section+*/
+
+   .flight_top h2 {
+      font-size: 97.7px;
+      max-width: 1200px;
+
+   }
+
+   .flight_top_links a {
+      padding: 10px;
+      font-size: 25px;
+   }
+
+   .flight_top .flight_top_right_shape {
+      right: -10%;
+      top: 10%;
+      display: inline-block;
+   }
 }
 
 @media screen and (min-width:1400px) {
@@ -300,14 +376,12 @@
       padding-right: 4rem;
    }
 
-   .home_contents {
-      padding: 50px 10px;
-   }
+
 
    .home_contents .home_right_shape {
       display: inline-block;
       bottom: -40%;
-      right: -8%;
+      right: -10%;
 
    }
 
@@ -336,7 +410,7 @@
    /*!SECTION:home section+*/
    .home_contents .home_right_shape {
       display: inline-block;
-      bottom: -40%;
+      bottom: -20%;
       right: -15%;
 
    }
@@ -359,8 +433,8 @@
    /*!SECTION:home section+*/
    .home_contents .home_right_shape {
       display: inline-block;
-      bottom: -40%;
-      right: -25%;
+      bottom: -15%;
+      right: -20%;
 
    }
 
@@ -375,21 +449,36 @@
       display: inline-block;
       width: auto;
    }
+
+   /*!SECTION:flight section+*/
+   .flight_top .flight_top_right_shape {
+      right: -15%;
+      top: 10%;
+      display: inline-block;
+   }
+
 }
 
 @media screen and (min-width:1920px) {
 
-   /*!SECTION:home section+*/
+   /*?SECTION:home section+*/
    .home_contents .home_right_shape {
       display: inline-block;
-      bottom: -25%;
+      bottom: -15%;
       right: -25%;
 
    }
 
    .home_contents .home_left_shape {
       left: -20%;
-      top: 20%;
+      top: 30%;
 
+   }
+
+   /*!SECTION:flight section+*/
+   .flight_top .flight_top_right_shape {
+      right: -25%;
+      top: 10%;
+      display: inline-block;
    }
 }
