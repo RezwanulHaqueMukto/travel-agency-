@@ -14,6 +14,7 @@
    --white: #ffffff;
    --button_color: #333333;
    --guide_top_color: #333333;
+   --flight_about: #333333;
    --gray: rgba(128, 128, 128, 0.632);
 }
 
@@ -138,6 +139,13 @@ button {
    font-weight: 700;
    line-height: 1.1;
    color: var(--text);
+   cursor: pointer;
+}
+
+.sm_heading {
+   font-size: 20px;
+   /* font-size: 24.99px; */
+   font-weight: 700;
    cursor: pointer;
 }
 
@@ -342,7 +350,7 @@ nav ul li a {
 /* ?SECTION:===============================  */
 
 .flight_top {
-   height: 60vh;
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -418,7 +426,7 @@ nav ul li a {
 .flight_bottom_contents .flight_bottom_image {
    order: 2;
 
-  
+
 }
 
 .flight_bottom_contents .flight_bottom_text {
@@ -426,6 +434,40 @@ nav ul li a {
 }
 
 .flight_bottom_arrow,
-.flight_bottom_left_shape{
+.flight_bottom_left_shape {
+   display: none;
+}
+
+.flight_about {
+   background: var(--flight_about);
+}
+
+.flight_about .left_content .heading_style,
+.flight_about .left_content .sm_heading,
+.flight_about .left_content .text_style {
+   color: var(--white);
+   line-height: 1.2;
+}
+
+.flight_about .left_content .heading_style,
+.flight_about .left_content .sm_heading {
+   padding-bottom: 15px;
+   text-align: left;
+
+}
+
+.flight_about .left_content .sm_heading:hover {
+   text-decoration: underline;
+   color: var(--gray);
+}
+
+.flight_about {
+   padding: 50px 0;
+overflow: hidden;
+}
+               
+.flight_about .about_bottom_shape{
+   bottom: -30%;
+   left: -10%;
    display: none;
 }

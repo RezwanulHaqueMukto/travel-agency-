@@ -54,6 +54,10 @@
    .flight_top_links {
       display: flex;
    }
+
+   .flight_about .left_content .heading_style {
+      font-size: 26px;
+   }
 }
 
 @media only screen and (min-width: 768px) {
@@ -203,6 +207,11 @@
 
    }
 
+   .sm_heading {
+      font-size: 24.99px;
+
+   }
+
    /*?SECTION: home */
 
    .home_contents .home_left_text h2 {
@@ -260,6 +269,12 @@
 
       font-size: 25px;
    }
+
+   .flight_about .left_content .heading_style {
+      font-size: 50px;
+      padding-bottom: 30px;
+   }
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -327,6 +342,7 @@
 
    .guide_bottom {
       padding: 100px 0px;
+      margin-bottom: 200px;
    }
 
    .guide_bottom .guide_bottom_left_shape {
@@ -342,6 +358,9 @@
    }
 
    /*!SECTION:flight section+*/
+   .flight_top {
+      margin-bottom: 150px;
+   }
 
    .flight_top h2 {
       font-size: 97.7px;
@@ -361,7 +380,7 @@
       display: inline-block;
    }
 
-   .flight_bottom {}
+
 
    .flight_bottom_arrow,
    .flight_bottom_left_shape {
@@ -390,6 +409,14 @@
       font-weight: 900;
    }
 
+   .flight_about {
+      padding: 120px 0;
+
+   }
+.flight_about .about_bottom_shape {
+ 
+   display: inline-block;
+}
 }
 
 @media screen and (min-width:1400px) {
@@ -449,12 +476,18 @@
    .guide_bottom {
       padding: 150px 0px;
    }
-      /*!SECTION:flight section+*/
-      .flight_bottom_arrow {
-         right: 5%;
-         bottom: 10%;
-         cursor: pointer;
-      }
+
+   /*!SECTION:flight section+*/
+   .flight_bottom_arrow {
+      right: 5%;
+      bottom: 10%;
+      cursor: pointer;
+   }
+
+   .flight_about .left_content .heading_style {
+      font-size: 55.54px;
+
+   }
 }
 
 @media screen and (min-width:1600px) {
