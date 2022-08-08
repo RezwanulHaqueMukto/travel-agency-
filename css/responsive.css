@@ -163,14 +163,26 @@
       width: 2px;
       height: 25px;
       background: var(--text);
-      top: 20%;
+      bottom: 10%;
       margin-left: 10px;
 
    }
 
+   .flight_top li {
+      padding-top: none;
+   }
 
    .flight_top_links li:last-child a::after {
       display: none;
+   }
+
+   .flight_bottom_contents .flight_bottom_image {
+      order: 1;
+      align-self: flex-start;
+   }
+
+   .flight_bottom_contents .flight_bottom_text {
+      order: 2;
    }
 }
 
@@ -251,10 +263,13 @@
 }
 
 @media only screen and (min-width:1200px) {
-/*? main nav */
-.header .nav_right .button {
 
-   padding: .5rem 3rem;}
+   /*? main nav */
+   .header .nav_right .button {
+
+      padding: .5rem 3rem;
+   }
+
    /*?NOTE: ?reuseable */
    .button {
       padding: 1rem 6rem;
@@ -337,7 +352,7 @@
    .flight_top_links a {
       padding: 10px;
       font-size: 25px;
-     
+
    }
 
    .flight_top .flight_top_right_shape {
@@ -345,6 +360,36 @@
       top: 10%;
       display: inline-block;
    }
+
+   .flight_bottom {}
+
+   .flight_bottom_arrow,
+   .flight_bottom_left_shape {
+      display: inline-block;
+   }
+
+   .flight_bottom_arrow {
+      right: 5%;
+      bottom: 5%;
+      cursor: pointer;
+   }
+
+   .flight_bottom_left_shape {
+      left: -110%;
+      top: 40%;
+   }
+
+
+
+   .flight_bottom_text {
+      display: flex;
+   }
+
+   .flight_bottom_text h3 {
+      line-height: 1.4;
+      font-weight: 900;
+   }
+
 }
 
 @media screen and (min-width:1400px) {
@@ -404,6 +449,12 @@
    .guide_bottom {
       padding: 150px 0px;
    }
+      /*!SECTION:flight section+*/
+      .flight_bottom_arrow {
+         right: 5%;
+         bottom: 10%;
+         cursor: pointer;
+      }
 }
 
 @media screen and (min-width:1600px) {

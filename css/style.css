@@ -138,6 +138,7 @@ button {
    font-weight: 700;
    line-height: 1.1;
    color: var(--text);
+   cursor: pointer;
 }
 
 @keyframes float {
@@ -252,10 +253,12 @@ nav ul li a {
    -ms-transition: all .5ms ease;
    -o-transition: all .5ms ease;
 }
-.header .nav_right .button:hover{
+
+.header .nav_right .button:hover {
    background: var(--button_color);
    color: var(--w_text);
 }
+
 /* !NOTE:===============================*/
 /**+++++++++ main nav +++++++++++*/
 /* ?NOTE:===============================  */
@@ -355,9 +358,14 @@ nav ul li a {
    color: var(--gray);
 }
 
-.flight_top ul{
+.flight_top ul {
    padding-left: 0px !important;
 }
+
+.flight_top li {
+   padding-top: 15px;
+}
+
 .flight_top_links a {
    font-weight: 700;
    color: var(--text);
@@ -388,5 +396,36 @@ nav ul li a {
 .flight_top .flight_top_right_shape,
 .flight_top .flight_top_bottom_shape {
    display: none;
+}
 
+.flight_top {
+   margin-bottom: 80px;
+}
+
+.flight_bottom_contents {
+   flex-direction: column;
+}
+
+.flight_bottom_contents .md_heading_style {
+   padding: 15px 0;
+   text-decoration: underline;
+}
+
+.flight_bottom_contents .md_heading_style:hover {
+   color: var(--gray);
+}
+
+.flight_bottom_contents .flight_bottom_image {
+   order: 2;
+
+  
+}
+
+.flight_bottom_contents .flight_bottom_text {
+   order: 1;
+}
+
+.flight_bottom_arrow,
+.flight_bottom_left_shape{
+   display: none;
 }
