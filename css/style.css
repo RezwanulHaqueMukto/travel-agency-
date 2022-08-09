@@ -31,8 +31,8 @@ body {
    background-color: var(--body_color);
 }
 
-h1,
 h2,
+h1,
 h3,
 h4,
 h5,
@@ -339,6 +339,11 @@ nav ul li a {
    /* width: 80%; */
 }
 
+.guide_bottom .guide_card .md_heading_style:hover {
+   color: var(--gray);
+   text-decoration: underline;
+}
+
 .guide_bottom_left_shape,
 .guide_bottom_right_shape {
    display: none;
@@ -463,11 +468,72 @@ nav ul li a {
 
 .flight_about {
    padding: 50px 0;
-overflow: hidden;
+   overflow: hidden;
 }
-               
-.flight_about .about_bottom_shape{
+
+.flight_about .about_bottom_shape {
    bottom: -30%;
    left: -10%;
    display: none;
+}
+
+/* !?SECTION:===============================*/
+/**+++++++++ about section +++++++++++*/
+/* ?SECTION:===============================  */
+.about_top_contents {
+   padding: 50px 0;
+
+}
+
+.about_top_contents .accordion .accordion-button {
+   background-color: var(--body_color);
+   border-top: 3px solid var(--button_color);
+   padding: 50px 0;
+}
+.about_top_contents .accordion .accordion-item:last-child .accordion-button {
+   border-bottom: 3px solid var(--button_color);
+}
+.about_top_contents .accordion .accordion-button:hover {
+   background-color: var(--gray);
+}
+
+.about_top_contents .accordion .accordion-body {
+   background-color: var(--gray);
+
+}
+
+.about_top_contents .accordion .accordion-button .text_style {
+   position: absolute;
+   top: 10%;
+
+
+}
+
+.about_top_contents .right_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+
+.left_accordion_header,
+.bottom_about_header {
+   color: var(--text);
+   padding-bottom: 30px;
+   font-size: 25px;
+   font-weight: 700;
+}
+
+.about_top_contents .accordion .accordion-item .accordion-button::after {
+   flex-shrink: 0;
+   width: 1.25rem;
+   /* height: 1.25rem;
+   margin-left: auto;
+   position: static; */
+   position: absolute;
+   bottom: 0%;
+   content: "";
+   right: 50%;
 }

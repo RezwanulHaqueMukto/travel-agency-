@@ -188,6 +188,12 @@
    .flight_bottom_contents .flight_bottom_text {
       order: 2;
    }
+
+   /*!?SECTION about section */
+   .about_top_contents .accordion .accordion-button {
+
+      padding: 35px 0;
+   }
 }
 
 @media only screen and (min-width:992px) {
@@ -275,6 +281,11 @@
       padding-bottom: 30px;
    }
 
+   .left_accordion_header,
+   .bottom_about_header {
+      padding-right: 20%;
+      font-size: 35.44px;
+   }
 }
 
 @media only screen and (min-width:1200px) {
@@ -413,10 +424,52 @@
       padding: 120px 0;
 
    }
-.flight_about .about_bottom_shape {
- 
-   display: inline-block;
-}
+
+   .flight_about .about_bottom_shape {
+
+      display: inline-block;
+   }
+
+   /*!SECTION:about section+*/
+   .left_accordion_header,
+   .bottom_about_header {
+      padding-right: 20%;
+      font-size: 55.44px;
+   }
+
+   .about_top_contents {
+      padding: 150px 0;
+
+   }
+
+   .about_top_contents .accordion .accordion-button {
+      padding: 20px 0;
+   }
+
+   .about_top_contents .accordion .accordion-button .text_style {
+      position: absolute;
+      top: 30%;
+
+
+   }
+
+   .about_top_contents .accordion .accordion-item .accordion-button::after {
+      flex-shrink: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-left: auto;
+      position: static;
+
+      content: "";
+
+   }
+
+   .left_accordion_header,
+   .bottom_about_header {
+      font-size: 75.46px;
+      padding-right: 0%;
+
+   }
 }
 
 @media screen and (min-width:1400px) {
@@ -488,6 +541,16 @@
       font-size: 55.54px;
 
    }
+
+   /*!SECTION:about section+*/
+   .left_accordion_header,
+   .bottom_about_header {
+      font-size: 81.46px;
+      padding-right: 5%;
+   }
+      .left_accordion_header{
+         padding-bottom:50px ;
+      }
 }
 
 @media screen and (min-width:1600px) {
@@ -542,6 +605,10 @@
       display: inline-block;
    }
 
+   .flight_about {
+      padding: 150px 0;
+
+   }
 }
 
 @media screen and (min-width:1920px) {
