@@ -501,12 +501,22 @@ nav ul li a {
    border-bottom: 3px solid var(--button_color);
 }
 
+
 .about_top_contents .accordion .accordion-button:hover {
    background-color: var(--gray);
 }
 
+.accordion-button:not(.collapsed) {
+   border: none;
+}
+
+.accordion-button:focus {
+   box-shadow: none;
+   border-color: rgba(0, 0, 0, .125);
+}
 .about_top_contents .accordion .accordion-body {
    background-color: var(--gray);
+   border: none;
 
 }
 
@@ -712,6 +722,11 @@ nav ul li a {
    font-size: 21px;
 }
 
+.footer_top_contents ul li a:hover {
+   color: var(--gray);
+   text-decoration: underline;
+}
+
 .footer_top_contents .flex {
    justify-content: space-around;
    flex-wrap: wrap;
@@ -753,8 +768,9 @@ nav ul li a {
 
 .footer_top_contents ul li {
    margin-bottom: 20px;
-
 }
+
+
 
 .footer_bottom_contents {
    font-weight: 700;
@@ -762,6 +778,6 @@ nav ul li a {
 
 .footer_bottom_shape {
    top: 28%;
-   left:0%;
+   left: 0%;
    display: none;
 }
