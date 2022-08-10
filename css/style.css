@@ -698,6 +698,7 @@ nav ul li a {
 #footer {
    background: var(--footerBackground);
    width: 100%;
+   overflow:hidden;
 }
 
 .footer_top_contents {
