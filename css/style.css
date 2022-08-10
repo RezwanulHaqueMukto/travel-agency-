@@ -645,24 +645,27 @@ nav ul li a {
    background: transparent;
    font-size: 20.87px;
    margin-bottom: 20px;
-   border: 2.8px solid #333;
+   border: 3px solid #333;
    border-radius: 5px;
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
-   display: flex;
+   box-shadow: none !important;
 
 }
 
 .contact_content input:focus {
    background: #cccccc;
+   outline: none !important;
+   border: 4px solid #333;
+
 }
 
 .contact_content form button {
    font-size: 20.87px;
    padding: 15px 0;
-   text-align: center ;
+   text-align: center;
    width: 100%;
 }
 
@@ -671,5 +674,94 @@ nav ul li a {
 }
 
 .contact_right_img {
+   display: none;
+}
+
+.contact_content {
+   padding-bottom: 20px;
+}
+
+/* ?SECTION:===============================*/
+/**+++++++++ footer+++++++++++*/
+/* ?SECTION:===============================  */
+
+#footer {
+   background: var(--footerBackground);
+   width: 100%;
+}
+
+.footer_top_contents {
+   padding: 80px 0;
+}
+
+.footer_top_contents ul {
+   padding-left: 0 !important;
+}
+
+.footer_top_contents .footer_heading {
+   font-size: 25px;
+   font-weight: 900;
+   margin: 10px 0;
+   font-family: 'Lato',
+      sans-serif;
+}
+
+
+.footer_top_contents ul li a {
+   color: var(--text);
+   font-size: 21px;
+}
+
+.footer_top_contents .flex {
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: stretch;
+}
+
+.footer_top_contents .footer_logo {
+   width: 100%;
+}
+
+.footer_top_contents .footer_links-1 ul {
+   /* margin-left: 50px; */
+   margin-left: 10px;
+}
+
+.footer_top_contents .footer_links-2 ul,
+.footer_top_contents .footer_links-3 ul {
+   margin-left: 10px;
+}
+
+.footer_top_contents .footer_links-2 ul,
+.footer_top_contents .footer_links-3 ul,
+.footer_top_contents .footer_links-4 ul {
+   margin-top: 20px;
+}
+
+.footer_top_contents .flex>* {
+   flex: 1 1 auto;
+   margin-top: 30px;
+   min-width: 200px;
+   /* padding-left: 80px; */
+}
+
+.footer_bottom_contents {
+   font-size: 20px;
+   padding: 20px 0;
+}
+
+
+.footer_top_contents ul li {
+   margin-bottom: 20px;
+
+}
+
+.footer_bottom_contents {
+   font-weight: 700;
+}
+
+.footer_bottom_shape {
+   top: 28%;
+   left:0%;
    display: none;
 }

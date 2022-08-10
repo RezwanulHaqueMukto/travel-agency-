@@ -515,7 +515,6 @@
    }
 
    /*!SECTION:contact section+*/
-
    .contact_right_img {
       display: inline-block;
       padding-top: 20px;
@@ -523,13 +522,57 @@
 
    .contact_content form button {
       margin-top: 22px;
-      width: 95%;
-      margin-left: 15px;
+      width: 99%;
+      margin-left: 2px;
    }
-.contact_left_form{
-   max-width: 460px;
-}
 
+   .contact_left_form {
+      max-width: 460px;
+   }
+
+   .contact_content {
+      padding-bottom: 150px;
+   }
+
+   .footer_top_contents .footer_logo {
+      width: auto;
+   }
+
+   .footer_top_contents .footer_links-1 ul {
+      /* margin-left: 50px; */
+      margin-left: 10px;
+   }
+
+   .footer_bottom_contents {
+      padding: 80px 0;
+   }
+
+   .footer_top_contents {
+      padding: 120px 0;
+   }
+
+   .footer_top_contents .footer_links-1 ul,
+   .footer_top_contents .footer_links-2 ul,
+   .footer_top_contents .footer_links-3 ul,
+   .footer_top_contents .footer_links-4 ul {
+      margin-left: 60px;
+
+   }
+.footer_top_contents .footer_heading {
+
+   margin-bottom: 30px;
+}
+   .footer_top_contents .footer_links-2 ul,
+   .footer_top_contents .footer_links-3 ul,
+   .footer_top_contents .footer_links-4 ul {
+      margin-top: 60px;
+   }
+
+
+.footer_bottom_shape {
+
+   display:inline-block;
+}
 }
 
 @media screen and (min-width:1400px) {

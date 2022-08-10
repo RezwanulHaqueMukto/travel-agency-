@@ -13,15 +13,15 @@ wow = new WOW({
 	live: true, // default
 });
 wow.init();
-console.log('hi')
+console.log("hi");
 
 $(document).ready(function () {
 	var owl = $(".owl-carousel");
 	$(".owl-carousel").owlCarousel({
-		margin: 20,
+		margin: 30,
 		autoplay: true,
 		autoplayTimeout: 2000,
-		    responsiveClass: true,
+		responsiveClass: true,
 		autoplayHoverPause: true,
 		responsiveClass: true,
 		loop: true,
@@ -32,7 +32,7 @@ $(document).ready(function () {
 			0: {
 				items: 1,
 			},
-			576: {
+			540: {
 				items: 2,
 			},
 			1000: {
