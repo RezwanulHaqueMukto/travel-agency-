@@ -623,3 +623,7 @@ nav ul li a {
 .about_carousel .content p {
    color: #666666;
 }
+  .about_bottom_left_shape ,
+  .about_bottom_right_shape  {
+   display: none;
+}
