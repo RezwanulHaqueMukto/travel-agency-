@@ -294,6 +294,12 @@
       padding-right: 20%;
       font-size: 35.44px;
    }
+
+   /*!SECTION:contact section+*/
+   .contact_right_img {
+      display: inline-block;
+      padding-top: 50px;
+   }
 }
 
 @media only screen and (min-width:1200px) {
@@ -493,10 +499,37 @@
       left: -10%;
       top: 10%;
    }
+
    .about_bottom_right_shape {
       right: -10%;
-      bottom:  5%;
+      bottom: 5%;
    }
+
+   .contact_content .heading_style {
+      text-align: center !important;
+      font-size: 81.42px;
+   }
+
+   .about_carousel {
+      padding-bottom: 150px;
+   }
+
+   /*!SECTION:contact section+*/
+
+   .contact_right_img {
+      display: inline-block;
+      padding-top: 20px;
+   }
+
+   .contact_content form button {
+      margin-top: 22px;
+      width: 95%;
+      margin-left: 15px;
+   }
+.contact_left_form{
+   max-width: 460px;
+}
+
 }
 
 @media screen and (min-width:1400px) {
@@ -580,7 +613,11 @@
       padding-bottom: 50px;
    }
 
-   /*!SECTION:about section+*/
+   .about_top_contents .left_accordion .accordion {
+      padding-right: 110px;
+   }
+
+
    .bottom_about_header {
       padding: 100px 250px;
 
@@ -644,16 +681,17 @@
       padding: 150px 0;
 
    }
-      /*!SECTION:about section+*/
-     .about_bottom_left_shape {
-        left: -20%;
-        top: 10%;
-     }
 
-     .about_bottom_right_shape {
-        right: -20%;
-        bottom: 5%;
-     }
+   /*!SECTION:about section+*/
+   .about_bottom_left_shape {
+      left: -20%;
+      top: 10%;
+   }
+
+   .about_bottom_right_shape {
+      right: -20%;
+      bottom: 5%;
+   }
 }
 
 @media screen and (min-width:1920px) {
@@ -679,14 +717,14 @@
       display: inline-block;
    }
 
-      /*!SECTION:about section+*/
-      .about_bottom_left_shape {
-         left: -30%;
-         top: 10%;
-      }
+   /*!SECTION:about section+*/
+   .about_bottom_left_shape {
+      left: -30%;
+      top: 10%;
+   }
 
-      .about_bottom_right_shape {
-         right: -30%;
-         bottom: 5%;
-      }
+   .about_bottom_right_shape {
+      right: -25%;
+      bottom: 5%;
+   }
 }

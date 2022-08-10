@@ -583,9 +583,6 @@ nav ul li a {
    display: none !important;
 }
 
-.about_carousel {
-   padding-bottom: 250px;
-}
 
 .about_carousel .img_container img {
    height: 100px;
@@ -623,7 +620,56 @@ nav ul li a {
 .about_carousel .content p {
    color: #666666;
 }
-  .about_bottom_left_shape ,
-  .about_bottom_right_shape  {
+
+.about_bottom_left_shape,
+.about_bottom_right_shape {
+   display: none;
+}
+
+/* !?SECTION:===============================*/
+/**+++++++++ contact section +++++++++++*/
+/* ?SECTION:===============================  */
+
+.contact_content .heading_style {
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+
+.contact_content input::placeholder {
+   color: var(--text);
+
+}
+
+.contact_content input {
+   padding: 15px;
+   background: transparent;
+   font-size: 20.87px;
+   margin-bottom: 20px;
+   border: 2.8px solid #333;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   display: flex;
+
+}
+
+.contact_content input:focus {
+   background: #cccccc;
+}
+
+.contact_content form button {
+   font-size: 20.87px;
+   padding: 15px 0;
+   text-align: center ;
+   width: 100%;
+}
+
+#write_something {
+   padding-bottom: 100px;
+}
+
+.contact_right_img {
    display: none;
 }
