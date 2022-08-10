@@ -58,6 +58,13 @@
    .flight_about .left_content .heading_style {
       font-size: 26px;
    }
+
+   /*SECTION: about section */
+   .about_carousel .item .profile {
+
+      padding: 0 20px;
+
+   }
 }
 
 @media only screen and (min-width: 768px) {
@@ -194,6 +201,7 @@
 
       padding: 35px 0;
    }
+
 }
 
 @media only screen and (min-width:992px) {
@@ -470,6 +478,12 @@
       padding-right: 0%;
 
    }
+
+   .bottom_about_header {
+      padding: 100px 200px;
+
+   }
+
 }
 
 @media screen and (min-width:1400px) {
@@ -548,9 +562,16 @@
       font-size: 81.46px;
       padding-right: 5%;
    }
-      .left_accordion_header{
-         padding-bottom:50px ;
-      }
+
+   .left_accordion_header {
+      padding-bottom: 50px;
+   }
+
+   /*!SECTION:about section+*/
+   .bottom_about_header {
+      padding: 100px 250px;
+
+   }
 }
 
 @media screen and (min-width:1600px) {
@@ -574,6 +595,7 @@
 
       bottom: 43%;
    }
+
 }
 
 @media screen and (min-width:1700px) {

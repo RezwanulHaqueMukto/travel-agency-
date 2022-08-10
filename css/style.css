@@ -147,6 +147,7 @@ button {
    /* font-size: 24.99px; */
    font-weight: 700;
    cursor: pointer;
+
 }
 
 @keyframes float {
@@ -486,13 +487,20 @@ nav ul li a {
 }
 
 .about_top_contents .accordion .accordion-button {
-   background-color: var(--body_color);
    border-top: 3px solid var(--button_color);
    padding: 50px 0;
+   background-color: var(--gray);
 }
+
+.about_top_contents .accordion .collapsed {
+
+   background-color: var(--body_color);
+}
+
 .about_top_contents .accordion .accordion-item:last-child .accordion-button {
    border-bottom: 3px solid var(--button_color);
 }
+
 .about_top_contents .accordion .accordion-button:hover {
    background-color: var(--gray);
 }
@@ -510,10 +518,10 @@ nav ul li a {
 }
 
 .about_top_contents .right_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
 }
 
 
@@ -536,4 +544,82 @@ nav ul li a {
    bottom: 0%;
    content: "";
    right: 50%;
+}
+
+.owl-prev {
+
+   content: "";
+   height: 62px;
+   width: 70px;
+   background-image: url('../images/about/left_arrow.png') !important;
+   background-repeat: no-repeat !important;
+   background-size: 70px !important;
+   position: absolute !important;
+   left: -3%;
+   top: 40%;
+}
+
+.owl-next {
+
+   content: "";
+   height: 62px;
+   width: 70px;
+   background-image: url('../images/about/right_arrow.png') !important;
+   background-repeat: no-repeat !important;
+   background-size: 70px !important;
+   position: absolute !important;
+   right: -3%;
+   top: 40%;
+}
+
+
+
+.owl-prev span,
+.owl-next span {
+   display: none !important;
+}
+
+.owl-dots {
+   display: none !important;
+}
+
+.about_carousel {
+   padding-bottom: 250px;
+}
+
+.about_carousel .img_container img {
+   height: 100px;
+   width: 100px;
+   margin: 0 auto;
+}
+
+.about_carousel .item {
+   padding: 10px;
+
+   /* background-color: red; */
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.about_carousel .item .profile {
+   border: 2px solid #333333;
+   max-width: 392px;
+   min-height: 425px;
+   padding: 0 10px;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+
+.about_carousel .item .sm_heading {
+   color: #333333;
+}
+
+.about_carousel .content p {
+   color: #666666;
 }
