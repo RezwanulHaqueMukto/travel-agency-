@@ -68,9 +68,18 @@ body {
 
 a:hover {
    cursor: pointer;
+   color: var(--gray);
 }
 
-
+.button:hover {
+   box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
+   color: #fff;
+   transform: translateY(-2px);
+   -webkit-transform: translateY(-2px);
+   -moz-transform: translateY(-2px);
+   -ms-transform: translateY(-2px);
+   -o-transform: translateY(-2px);
+}
 
 img {
    max-width: 100%;
@@ -117,7 +126,25 @@ button {
    padding: 20px;
 }
 
+.of_hidden {
+   overflow: hidden;
+}
 
+.transition {
+   transition: transform .8s;
+   -webkit-transition: transform .8s;
+   -moz-transition: transform .8s;
+   -ms-transition: transform .8s;
+   -o-transition: transform .8s;
+}
+
+.height_scale img:hover {
+   transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+   -moz-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   -o-transform: scale(1.3);
+}
 
 .text_style {
    font-size: 16.16px;
@@ -432,7 +459,6 @@ nav ul li a {
 .flight_bottom_contents .flight_bottom_image {
    order: 2;
 
-
 }
 
 .flight_bottom_contents .flight_bottom_text {
@@ -478,6 +504,10 @@ nav ul li a {
    display: none;
 }
 
+div.flight_bottom_image:nth-child(1) {
+   max-width: 560px;
+}
+
 /* !?SECTION:===============================*/
 /**+++++++++ about section +++++++++++*/
 /* ?SECTION:===============================  */
@@ -514,6 +544,7 @@ nav ul li a {
    box-shadow: none;
    border-color: rgba(0, 0, 0, .125);
 }
+
 .about_top_contents .accordion .accordion-body {
    background-color: var(--gray);
    border: none;
@@ -623,6 +654,14 @@ nav ul li a {
    -o-border-radius: 10px;
 }
 
+.about_carousel .item:hover .profile {
+   border: 3px solid #333333;
+}
+
+.about_carousel .item a:hover {
+   color: var(--gray);
+}
+
 .about_carousel .item .sm_heading {
    color: #333333;
 }
@@ -678,7 +717,15 @@ nav ul li a {
    text-align: center;
    width: 100%;
 }
-
+.contact_content form button:hover {
+   box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
+   color: #fff;
+   transform: translateY(-4px);
+   -webkit-transform: translateY(-4px);
+   -moz-transform: translateY(-4px);
+   -ms-transform: translateY(-4px);
+   -o-transform: translateY(-4px);
+}
 #write_something {
    padding-bottom: 100px;
 }
@@ -698,7 +745,7 @@ nav ul li a {
 #footer {
    background: var(--footerBackground);
    width: 100%;
-   overflow:hidden;
+   overflow: hidden;
 }
 
 .footer_top_contents {
