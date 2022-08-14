@@ -203,6 +203,120 @@ button {
    }
 }
 
+.image-box {
+   overflow: hidden;
+   transition: transform .5s;
+   -webkit-transition: transform .5s;
+   -moz-transition: transform .5s;
+   -ms-transition: transform .5s;
+   -o-transition: transform .5s;
+}
+
+
+.guide_card:hover .overlay ul {
+   transform: translateX(0%);
+
+}
+
+.guide_card:hover .overlay::after {
+   transform: scaleY(1);
+   transition: transform .5s ease-in-out;
+   -webkit-transition: transform .5s ease-in-out;
+   -moz-transition: transform .5s ease-in-out;
+   -ms-transition: transform .5s ease-in-out;
+   -o-transition: transform .5s ease-in-out;
+}
+
+.overlay ul {
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   transform: translateX(150%);
+   transition: transform .5s;
+   -webkit-transition: transform .5s;
+   -moz-transition: transform .5s;
+   -ms-transition: transform .5s;
+   -o-transition: transform .5s;
+   z-index: 10;
+}
+
+.overlay::after {
+   content: "";
+   height: 60%;
+   top: 18%;
+   bottom: 0%;
+   left: 5%;
+   right: 0%;
+   background-color: rgba(0, 0, 0, 0.271);
+   max-width: 90%;
+   position: absolute;
+   transform: scaleY(0);
+   transition: transform .5s;
+   -webkit-transition: transform .5s;
+   -moz-transition: transform .5s;
+   -ms-transition: transform .5s;
+   -o-transition: transform .5s;
+}
+
+.hide_content ul {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   padding-left: 0;
+}
+
+
+
+.hide_content ul i {
+   margin: 5px;
+}
+
+.hide_content ul li i {
+   border-radius: 100%;
+   background-color: #cccccc;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+   padding: 10px;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+}
+
+.hide_content ul li i:hover {
+   background-color: rgba(222, 184, 135, 0.735);
+
+}
+
+.hide_content ul li a {
+   color: var(--gray);
+
+}
+
+.hide_content ul li i:hover {
+   transform: translateY(-3px);
+   -webkit-transform: translateY(-3px);
+   -moz-transform: translateY(-3px);
+   -ms-transform: translateY(-3px);
+   -o-transform: translateY(-3px);
+}
+
+.hide_content ul li a {
+   cursor: pointer;
+}
+
+.hide_content ul li i:hover {
+   background: var(--body_color);
+}
+
+
 /* ! placement items*/
 
 .flex {
@@ -332,6 +446,9 @@ nav ul li a {
 /* !?SECTION:===============================*/
 /**+++++++++ guide section +++++++++++*/
 /* ?SECTION:===============================  */
+#guide {
+   overflow: hidden;
+}
 
 .guide_top {
    background: var(--guide_top_color);
@@ -362,9 +479,14 @@ nav ul li a {
    text-align: center;
 }
 
+.guide_bottom .guide_card {
+   overflow: hidden;
+}
+
 .guide_bottom .guide_card img {
    margin-bottom: 25px;
-   /* width: 80%; */
+
+
 }
 
 .guide_bottom .guide_card .md_heading_style:hover {
@@ -717,6 +839,7 @@ div.flight_bottom_image:nth-child(1) {
    text-align: center;
    width: 100%;
 }
+
 .contact_content form button:hover {
    box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
    color: #fff;
@@ -726,6 +849,7 @@ div.flight_bottom_image:nth-child(1) {
    -ms-transform: translateY(-4px);
    -o-transform: translateY(-4px);
 }
+
 #write_something {
    padding-bottom: 100px;
 }

@@ -149,6 +149,7 @@
       width: auto;
    }
 
+
    /*!?SECTION flight section */
 
 
@@ -201,6 +202,7 @@
 
       padding: 35px 0;
    }
+
 
 }
 
@@ -269,6 +271,10 @@
       width: 50px;
       height: 2px;
 
+   }
+
+   .guide_bottom .guide_card {
+      max-width: 364px;
    }
 
    /*!?SECTION flight section */
@@ -558,10 +564,12 @@
       margin-left: 60px;
 
    }
-.footer_top_contents .footer_heading {
 
-   margin-bottom: 30px;
-}
+   .footer_top_contents .footer_heading {
+
+      margin-bottom: 30px;
+   }
+
    .footer_top_contents .footer_links-2 ul,
    .footer_top_contents .footer_links-3 ul,
    .footer_top_contents .footer_links-4 ul {
@@ -569,10 +577,10 @@
    }
 
 
-.footer_bottom_shape {
+   .footer_bottom_shape {
 
-   display:inline-block;
-}
+      display: inline-block;
+   }
 }
 
 @media screen and (min-width:1400px) {
