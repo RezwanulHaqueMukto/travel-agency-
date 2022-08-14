@@ -266,7 +266,7 @@
       content: "";
       position: absolute;
       background-color: var(--text);
-      bottom: 50%;
+      bottom: 53%;
       left: 1%;
       width: 50px;
       height: 2px;
@@ -368,7 +368,7 @@
    }
 
    .guide_bottom .guide_card h3::before {
-      bottom: 45%;
+      bottom: 48%;
    }
 
    .guide_bottom {
@@ -630,7 +630,7 @@
    }
 
    .guide_bottom .guide_card h3::before {
-      bottom: 42%;
+      bottom: 46%;
    }
 
    .guide_bottom .md_heading_style {
@@ -694,7 +694,7 @@
 
    .guide_bottom .guide_card h3::before {
 
-      bottom: 43%;
+      bottom: 46%;
    }
 
 }

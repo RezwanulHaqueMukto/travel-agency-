@@ -72,6 +72,7 @@ a:hover {
 }
 
 .button:hover {
+   -webkit-box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
    box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
    color: #fff;
    transform: translateY(-2px);
@@ -131,7 +132,10 @@ button {
 }
 
 .transition {
+   -webkit-transition: -webkit-transform .8s;
+   transition: -webkit-transform .8s;
    transition: transform .8s;
+   transition: transform .8s, -webkit-transform .8s;
    -webkit-transition: transform .8s;
    -moz-transition: transform .8s;
    -ms-transition: transform .8s;
@@ -177,6 +181,32 @@ button {
 
 }
 
+@-webkit-keyframes float {
+   0% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+   }
+
+   50% {
+      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+   }
+
+   100% {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+      -o-transform: translateY(50px);
+   }
+}
+
 @keyframes float {
    0% {
       transform: translateY(50px);
@@ -205,7 +235,10 @@ button {
 
 .image-box {
    overflow: hidden;
+   -webkit-transition: -webkit-transform .5s;
+   transition: -webkit-transform .5s;
    transition: transform .5s;
+   transition: transform .5s, -webkit-transform .5s;
    -webkit-transition: transform .5s;
    -moz-transition: transform .5s;
    -ms-transition: transform .5s;
@@ -214,13 +247,20 @@ button {
 
 
 .guide_card:hover .overlay ul {
+   -webkit-transform: translateX(0%);
+   -ms-transform: translateX(0%);
    transform: translateX(0%);
 
 }
 
 .guide_card:hover .overlay::after {
+   -webkit-transform: scaleY(1);
+   -ms-transform: scaleY(1);
    transform: scaleY(1);
+   -webkit-transition: -webkit-transform .5s ease-in-out;
+   transition: -webkit-transform .5s ease-in-out;
    transition: transform .5s ease-in-out;
+   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
    -webkit-transition: transform .5s ease-in-out;
    -moz-transition: transform .5s ease-in-out;
    -ms-transition: transform .5s ease-in-out;
@@ -233,8 +273,13 @@ button {
    left: 0%;
    width: 100%;
    height: 100%;
+   -webkit-transform: translateX(150%);
+   -ms-transform: translateX(150%);
    transform: translateX(150%);
+   -webkit-transition: -webkit-transform .5s;
+   transition: -webkit-transform .5s;
    transition: transform .5s;
+   transition: transform .5s, -webkit-transform .5s;
    -webkit-transition: transform .5s;
    -moz-transition: transform .5s;
    -ms-transition: transform .5s;
@@ -252,8 +297,13 @@ button {
    background-color: rgba(0, 0, 0, 0.271);
    max-width: 90%;
    position: absolute;
+   -webkit-transform: scaleY(0);
+   -ms-transform: scaleY(0);
    transform: scaleY(0);
+   -webkit-transition: -webkit-transform .5s;
+   transition: -webkit-transform .5s;
    transition: transform .5s;
+   transition: transform .5s, -webkit-transform .5s;
    -webkit-transition: transform .5s;
    -moz-transition: transform .5s;
    -ms-transition: transform .5s;
@@ -261,10 +311,16 @@ button {
 }
 
 .hide_content ul {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
    width: 100%;
    height: 100%;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
    align-items: center;
    padding-left: 0;
 }
@@ -506,9 +562,20 @@ nav ul li a {
 
 .flight_top {
 
+   display: -webkit-box;
+
+   display: -ms-flexbox;
+
    display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
    align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
 }
 
@@ -566,6 +633,9 @@ nav ul li a {
 }
 
 .flight_bottom_contents {
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
 }
 
@@ -579,11 +649,15 @@ nav ul li a {
 }
 
 .flight_bottom_contents .flight_bottom_image {
+   -webkit-box-ordinal-group: 3;
+   -ms-flex-order: 2;
    order: 2;
 
 }
 
 .flight_bottom_contents .flight_bottom_text {
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 1;
    order: 1;
 }
 
@@ -663,6 +737,7 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .accordion-button:focus {
+   -webkit-box-shadow: none;
    box-shadow: none;
    border-color: rgba(0, 0, 0, .125);
 }
@@ -681,8 +756,14 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .about_top_contents .right_image {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
    align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
    height: 100%;
 }
@@ -698,6 +779,7 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .about_top_contents .accordion .accordion-item .accordion-button::after {
+   -ms-flex-negative: 0;
    flex-shrink: 0;
    width: 1.25rem;
    /* height: 1.25rem;
@@ -806,6 +888,26 @@ div.flight_bottom_image:nth-child(1) {
    margin-bottom: 30px;
 }
 
+.contact_content input::-webkit-input-placeholder {
+   color: var(--text);
+
+}
+
+.contact_content input::-moz-placeholder {
+   color: var(--text);
+
+}
+
+.contact_content input:-ms-input-placeholder {
+   color: var(--text);
+
+}
+
+.contact_content input::-ms-input-placeholder {
+   color: var(--text);
+
+}
+
 .contact_content input::placeholder {
    color: var(--text);
 
@@ -822,6 +924,7 @@ div.flight_bottom_image:nth-child(1) {
    -moz-border-radius: 5px;
    -ms-border-radius: 5px;
    -o-border-radius: 5px;
+   -webkit-box-shadow: none !important;
    box-shadow: none !important;
 
 }
@@ -841,6 +944,7 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .contact_content form button:hover {
+   -webkit-box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
    box-shadow: 0px 15px 20px rgba(85, 110, 100, 0.203);
    color: #fff;
    transform: translateY(-4px);
@@ -900,8 +1004,12 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .footer_top_contents .flex {
+   -ms-flex-pack: distribute;
    justify-content: space-around;
+   -ms-flex-wrap: wrap;
    flex-wrap: wrap;
+   -webkit-box-align: stretch;
+   -ms-flex-align: stretch;
    align-items: stretch;
 }
 
@@ -926,6 +1034,8 @@ div.flight_bottom_image:nth-child(1) {
 }
 
 .footer_top_contents .flex>* {
+   -webkit-box-flex: 1;
+   -ms-flex: 1 1 auto;
    flex: 1 1 auto;
    margin-top: 30px;
    min-width: 200px;
